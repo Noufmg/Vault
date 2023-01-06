@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Vault Lite</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css"/>
+  </head>
+  <body>
+    <h1 class="title animate__animated animate__fadeInDown">Vault Lite</h1>
+    <form id="createForm" class="card w50 center animate__animated animate__fadeInUp" action="./home.html">
+      <input class="input-textfield" type="password" placeholder="Password"/>
+      <input class="input-textfield" type="password" placeholder="Re-enter Password"/>
+      <button id="trigger" class="button" type="submit">Create</button>
+    </form>
+    <form id="enterForm" class="card w50 center animate__animated animate__fadeInUp" action="./home.html">
+      <input class="input-textfield" type="password" placeholder="Password"/>
+      <button id="trigger" class="button" type="submit">Enter</button>
+    </form>
+    <script type="module" src="../js/controllers/index.js"></script> 
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Vault Lite</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css"/>
+  </head>
+  <body>
+    <div id="container" class="w75 right-side h100 animate__animated animate__slideInUp">
+    </div>
+    <nav class="side-nav">
+      <ul class="side-nav-list">
+        <li><a class="active" href="home.html">All Vaults</a></li>
+        <li><a id="accountsButton" href="#">Accounts</a></li>
+        <li><a id="cardsButton" href="#">Credit Cards</a></li>
+        <li><a id="notesButton" href="#">Notes</a></li>
+        <li><a id="settingsButton" href="#">Settings</a></li>
+        <li><a id="signOutButton" href="index.html">Sign Out</a></li>
+      </ul>
+    </nav>
+    <script type="module" src="../js/controllers/home.js"></script>
+  </body>
+</html>

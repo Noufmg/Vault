@@ -1,0 +1,155 @@
+$font-stack: Helvetica, sans-serif
+$primary-color: #285b7b
+$secondary-color: #538caf
+$font-primary-color: #f9f9f9
+
+html
+    overflow: hidden
+    height: 100%
+
+body
+    font-family: $font-stack
+    background-color: $primary-color
+    margin: 0px
+    height: 100%
+
+.title
+    color: $font-primary-color
+    text-align: center
+    margin-top: 3em
+    font-size: 3em
+
+.input-label
+    display: block
+    font-weight: bold
+    margin: 5px 0px 5px 0px
+
+// TODO: add left padding to placeholder
+.input-textfield
+    width: 100%
+    padding: 10px 0px 10px 0px
+    border-width: 0px
+    border-radius: 5px
+    margin: 0px 0px 10px 0px
+    &::placeholder
+        visibility: hidden
+    &:hover::placeholder
+        visibility: visible
+
+.button
+    width: 100%
+    padding: 10px 0px 10px 0px
+    border-width: 0px
+    border-radius: 5px
+    margin: 0px 0px 10px 0px
+    color: $font-primary-color
+    font-weight: bold
+    background-color: $primary-color
+    &:hover
+        background-color: $secondary-color
+    &:active
+        background-color: $secondary-color
+
+.mb-1
+    margin-bottom: 1em
+.mb-2
+    margin-bottom: 2em
+.mb-3
+    margin-bottom: 3em
+.mb-4
+    margin-bottom: 4em
+.mb-5
+    margin-bottom: 5em
+
+.red
+    background-color: #c2786e
+    &:hover
+        background-color: #85524b
+.green
+    background-color: #82c26e
+    &:hover
+        background-color: #57834a
+.grey
+    background-color: #b9bdb8
+    &:hover
+        background-color: #7c807b
+
+.card
+    display: block
+    margin: 10px
+    background-color: #f0f0f0
+    border-radius: 5px
+    padding: 20px
+
+.container
+    width: 50vw
+    height: 70vh
+
+.center
+    margin-left: auto
+    margin-right: auto
+
+.center-text
+    text-align: center
+
+.w25
+    width: 25%
+.w50
+    width: 50%
+.w75
+    width: 75%
+.w100
+    width: 100%
+
+.h50
+    height: 50%
+.h75
+    height: 75%
+.h100
+    height: 100%
+
+.selectable:hover
+    background-color: #ffffff
+    &:active
+        border: 4px solid $secondary-color
+        border-radius: 10px
+
+.hidden
+    display: none
+
+a
+    text-decoration: none
+
+.side-nav-list
+    list-style: none
+    margin: 0px
+    padding: 20px 0px 20px 0px
+    width: 25vw
+    height: 100vh
+    background-color: $secondary-color
+
+.side-nav-list li
+    font-weight: bold
+    padding: 10px
+    a
+        color: $font-primary-color
+    &:hover
+        background-color: $font-primary-color
+    &:hover a
+        background-color: $font-primary-color
+        color: #000000
+
+.right-side
+    float: right
+
+.scroll-y
+    overflow-y: auto
+
+.scroll-x
+    overflow-x: auto
+
+.scroll
+    overflow: auto
+
+.active
+    background-color: $primary-color
